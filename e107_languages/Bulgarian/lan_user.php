@@ -14,7 +14,7 @@ define("LAN_USER_06","Снимка");
 define("LAN_USER_07","Аватар");
 define("LAN_USER_09","Подпис");
 define("LAN_USER_10","Скриване на имейла");
-define("LAN_USER_12","Потребителска група");
+define("LAN_USER_12","Потребителски клас");
 define("LAN_USER_13","ID");
 define("LAN_USER_14","Дата на регистрация");
 define("LAN_USER_15","Последно посещение");

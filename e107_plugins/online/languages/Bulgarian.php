@@ -1,8 +1,8 @@
 <?php
 
-define("LAN_LASTSEEN_1", "Меню „Последно видяни“");
+define("LAN_LASTSEEN_1", "Меню „Последно видени“");
 
-define('LAN_ONLINE_TRACKING_MESSAGE', "Проследяването на онлайн потребители в момента е изключено. Активирайте го [here]");
+define('LAN_ONLINE_TRACKING_MESSAGE', "Проследяването на онлайн потребители в момента е изключено. Активирайте го [тук]");
 define("LAN_ONLINE_1", "Гости: ");
 define("LAN_ONLINE_2", "Потребители: ");
 define("LAN_ONLINE_3", "На тази страница: ");
@@ -15,8 +15,8 @@ define("LAN_ONLINE_9", "на ");
 define("LAN_ONLINE_10", "Меню „Онлайн“");
 define("LAN_ONLINE_11", "Общо регистрирани потребители:");
 
-define("LAN_ONLINE_ADMIN_1", "меню „Последно видяни“");
-define("LAN_ONLINE_ADMIN_2", "Заглавие на меню „Последно видяни“");
+define("LAN_ONLINE_ADMIN_1", "меню „Последно видени“");
+define("LAN_ONLINE_ADMIN_2", "Заглавие на меню „Последно видени“");
 define("LAN_ONLINE_ADMIN_3", "Брой записи за показване");
 define("LAN_ONLINE_ADMIN_4", "меню „Онлайн“");
 define("LAN_ONLINE_ADMIN_5", "Заглавие на меню „Онлайн“");
