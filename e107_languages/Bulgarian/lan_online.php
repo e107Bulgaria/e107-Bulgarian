@@ -1,0 +1,53 @@
+<?php
+/* e107 website system - Bulgarian language file - Online */
+
+define("ONLINE_EL1", "Гости: ");
+define("ONLINE_EL2", "Потребители: ");
+define("ONLINE_EL3", "На тази страница: ");
+define("ONLINE_EL4", "Онлайн");
+define("ONLINE_EL5", "Потребители");
+define("ONLINE_EL6", "Най-нов потребител");
+define("ONLINE_EL7", "преглежда");
+define("ONLINE_EL8", "най-много потребители онлайн: ");
+define("ONLINE_EL9", "на");
+define("ONLINE_EL10", "Име на потребителя");
+define("ONLINE_EL11", "Преглеждана страница");
+define("ONLINE_EL12", "Отговаря на");
+define("ONLINE_EL13", "Форум");
+define("ONLINE_EL14", "Тема");
+define("ONLINE_EL15", "Страница");
+define("ONLINE_EL16", "Няма налична информация");
+
+define("CLASSRESTRICTED", "Страница с ограничение по потребителски клас");
+define("CHAT", "Чат");
+define("DOWNLOAD", "Изтегляния");
+define("EMAIL", "email.php");
+define("FORUM", "Начална страница на форума");
+define("LINKS", "Линкове");
+define("NEWS", "Новини");
+define("OLDPOLLS", "Стари анкети");
+define("POLLCOMMENT", "Анкета");
+define("PRINTPAGE", "Печат");
+define("LOGIN", "Вход в сайта");
+define("SEARCH", "Търсене");
+define("STATS", "Статистика на сайта");
+define("SUBMITNEWS", "Изпращане на новина");
+define("UPLOAD", "Качвания");
+define("USERPAGE", "Потребителски профили");
+define("USERSETTINGS", "Потребителски настройки");
+define("ONLINE", "Потребители онлайн");
+define("LISTNEW", "Нови записи");
+define("USERPOSTS", "Потребителски публикации");
+define("SUBCONTENT", "Изпращане на съдържание");
+define("TOP", "Най-активни потребители/теми");
+define("ADMINAREA", "Администрация");
+define("BUGTRACKER", "Проследяване на грешки");
+define("EVENT", "Списък със събития");
+define("CALENDAR", "Календар на събитията");
+define("FAQ", "Често задавани въпроси");
+define("PM", "Лични съобщения");
+define("SURVEY", "Проучване");
+define("ARTICLE", "Статия");
+define("CONTENT", "Страница със съдържание");
+define("REVIEW", "Рецензия");
+define("OTHER", "Друга страница: ");
