@@ -1,0 +1,28 @@
+<?php
+
+define("LANDT_01", "година");
+define("LANDT_02", "месец");
+define("LANDT_03", "седмица");
+define("LANDT_04", "ден");
+define("LANDT_05", "час");
+define("LANDT_06", "минута");
+define("LANDT_07", "секунда");
+define("LANDT_01s", "години");
+define("LANDT_02s", "месеца");
+define("LANDT_03s", "седмици");
+define("LANDT_04s", "дни");
+define("LANDT_05s", "часа");
+define("LANDT_06s", "минути");
+define("LANDT_07s", "секунди");
+
+define("LANDT_08", "мин.");
+define("LANDT_08s", "мин.");
+define("LANDT_09", "сек.");
+define("LANDT_09s", "сек.");
+define("LANDT_AGO", "преди");
+define("LANDT_IN", "след");
+
+define("LANDT_10", "Току-що");
+
+define("LANDT_XAGO", "преди [x]");
+define("LANDT_INX", "след [x]");
