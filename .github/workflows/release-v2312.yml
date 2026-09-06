@@ -1,0 +1,41 @@
+name: Publish Bulgarian e107 v2.3.12 release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/release-v2312.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch --tags --force
+          gh release create v2.3.12 \
+            --repo "$GITHUB_REPOSITORY" \
+            --verify-tag \
+            --title "Български езиков пакет за e107 CMS v2.3.12" \
+            --notes-file .github/release-v2312.md \
+            --latest
+
+      - name: Remove temporary release files
+        run: |
+          git config user.name "e107Bulgaria automation"
+          git config user.email "actions@users.noreply.github.com"
+          git rm .github/workflows/release-v2312.yml .github/release-v2312.md
+          git commit -m "chore: clean up v2.3.12 release automation"
+          git push origin HEAD:main
