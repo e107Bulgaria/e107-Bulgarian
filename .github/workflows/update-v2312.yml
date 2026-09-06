@@ -1,0 +1,44 @@
+name: Update Bulgarian translation for e107 v2.3.12
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-v2312.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.event.head_commit.message == 'chore: run e107 v2.3.12 translation update'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout translation repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply Bulgarian v2.3.12 translation update
+        run: python3 .github/scripts/update-v2312.py
+
+      - name: Fetch official e107 v2.3.12 language resources
+        run: |
+          git clone --depth 1 --branch v2.3.12 --filter=blob:none --sparse https://github.com/e107inc/e107.git /tmp/e107-v2312
+          git -C /tmp/e107-v2312 sparse-checkout set e107_languages e107_plugins/download/languages e107_plugins/forum/languages e107_plugins/newsletter/languages e107_plugins/pm/languages e107_plugins/signin/languages
+
+      - name: Verify define-key parity against upstream v2.3.12
+        run: python3 .github/scripts/update-v2312.py --check-upstream /tmp/e107-v2312
+
+      - name: Commit translation update
+        run: |
+          git config user.name "e107Bulgaria automation"
+          git config user.email "actions@users.noreply.github.com"
+          git rm .github/workflows/update-v2312.yml .github/scripts/update-v2312.py
+          git add -A
+          git diff --cached --check
+          git status --short
+          git commit -m "feat(i18n): update Bulgarian translation for e107 v2.3.12"
+          git push origin HEAD:main
